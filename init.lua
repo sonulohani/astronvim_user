@@ -50,8 +50,15 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+        "clangd",
+        "pyright",
+        "lua_ls"
     },
+    config = {
+      clangd = {
+        compile_commands_dir="/home/sonul/Perforce/darlin_trunk_linux/target/stp_mako_knee-build/compile_commands.json"
+      }
+    }
   },
 
   -- Configure require("lazy").setup() options
